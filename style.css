@@ -1,0 +1,93 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: #ccc;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  font-weight: 100;
+}
+
+canvas {
+  margin-top: 16px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.settings {
+  width: 800px;
+  display: flex;
+  font-size: 14px;
+  color: #ccc;
+  justify-content: center;
+  align-items: center;
+}
+
+.car-settings {
+  width: 3000px;
+  margin: 0 8px;
+}
+
+.car-title {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 200;
+}
+
+.position-setting, .speed-setting, .acceleration-setting {
+  display: flex;
+  flex-direction: row;
+}
+
+.setting-title, .speed-title, .acceleration-title {
+  min-width: 140px;
+}
+
+input {
+  width: 64px;
+}
+
+.datas {
+  margin-top: 8px;
+}
+
+.data-area {
+  display: flex;
+  margin-top: 2px;
+}
+
+.data-title {
+  min-width: 216px;
+}
+
+.start-btn {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  padding: 4px 12px;
+  background-color: white;
+  color: #000;
+  cursor: pointer;
+  transition: 250ms;
+  border-radius: 4px;
+}
+
+.start-btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+img {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.disclaimer {
+  width: 0;
+  height: 0;
+  display: none;
+}

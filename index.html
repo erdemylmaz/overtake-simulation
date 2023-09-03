@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Overtake Simulation</title>
+	<link rel="stylesheet" href="./style.css">
+	<!-- Icons -->
+	<script src="https://kit.fontawesome.com/fa178081cb.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<div class="settings">
+		<div class="across-car car-settings">
+			<div class="car-title">Across Car (Red)</div>
+
+			<div class="position-setting">
+				<div class="position-setting-title setting-title">Position X: </div>
+				<input type="number" max="800" class="position-setting acrossCarPositionSetting">
+			</div>
+
+			<div class="speed-setting">
+				<div class="speed-setting-title setting-title">Speed (m/s): </div>
+				<input type="number" class="speed-setting acrossCarSpeedSetting">
+			</div>
+
+			<div class="acceleration-setting">
+				<div class="acceleration-setting-title setting-title">Acceleration (m/s<sup>2</sup>): </div>
+				<input type="number" class="acceleartion-setting acrossCarAccelerationSetting">
+			</div>
+		</div>
+
+		<div class="front-car car-settings">
+			<div class="car-title">Front Car (Blue)</div>
+
+			<div class="position-setting">
+				<div class="position-setting-title setting-title">Position X: </div>
+				<input type="number" max="800" class="position-setting frontCarPositionSetting">
+			</div>
+
+			<div class="speed-setting">
+				<div class="speed-setting-title setting-title">Speed (m/s): </div>
+				<input type="number" class="speed-setting frontCarSpeedSetting">
+			</div>
+
+			<div class="acceleration-setting">
+				<div class="acceleration-setting-title setting-title">Acceleration (m/s<sup>2</sup>): </div>
+				<input type="number" class="acceleartion-setting frontCarAccelerationSetting">
+			</div>
+		</div>
+
+		<div class="my-car car-settings">
+			<div class="car-title">My Car (Black)</div>
+
+			<div class="position-setting">
+				<div class="position-setting-title setting-title">Position X: </div>
+				<input type="number" max="800" class="position-setting myCarPositionSetting">
+			</div>
+
+			<div class="speed-setting">
+				<div class="speed-setting-title setting-title">Speed (m/s): </div>
+				<input type="number" class="speed-setting myCarSpeedSetting">
+			</div>
+
+			<div class="acceleration-setting">
+				<div class="acceleration-setting-title setting-title">Acceleration (m/s<sup>2</sup>): </div>
+				<input type="number" class="acceleartion-setting myCarAccelerationSetting">
+			</div>
+		</div>
+	</div>
+
+	<div class="start-btn">Start!</div>
+
+	<div class="datas">
+		<div class="overtake-data-area data-area">
+			<div class="data-title">Can Overtake:</div>
+			<div class="data overtake-data">x</div>
+		</div>
+
+		<div class="way-data-area data-area">
+			<div class="data-title">Way For My Car:</div>
+			<div class="data wfmc-data">x</div>
+		</div>
+
+		<div class="space-data-area data-area">
+			<div class="data-title">Needed Space For Overtake:</div>
+			<div class="data space-data">x</div>
+		</div>
+
+		<div class="time-data-area data-area">
+			<div class="data-title">Necessary Time:</div>
+			<div class="data time-data">x</div>
+		</div>
+	</div>
+
+	<canvas width="800" height="200"></canvas>
+
+	<script src="./algorithm.js"></script>
+	<script src="./canvas.js"></script>
+	<script src="./inputs.js"></script>
+</body>
+</html>
